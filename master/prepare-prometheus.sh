@@ -9,7 +9,7 @@ sudo mkdir /etc/prometheus /var/lib/prometheus
 sudo groupadd -f -g 1504 prom
 sudo useradd -c "prom user" -d /var/lib/prometheus -s /bin/false -g prom -u 1504 prom
 sudo chown -R prom:prom /var/lib/prometheus
-cp /root/prometheus-m3db-cluster/master/prometheus-config.yaml /etc/prometheus/prometheus-config.yaml
+cp prometheus-config.yaml /etc/prometheus/prometheus-config.yaml
 
 # Tune kernel
 sudo sysctl -w fs.file-max=3000000

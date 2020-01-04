@@ -9,7 +9,7 @@ sudo mkdir /etc/m3db /var/lib/m3db /var/lib/m3kv
 sudo groupadd -f -g 1502 m3db
 sudo useradd -c "m3db user" -d /var/lib/m3db -s /bin/false -g m3db -u 1502 m3db
 sudo chown -R m3db:m3db /var/lib/m3db /var/lib/m3kv
-cp /root/worker/m3db-config.yaml /etc/m3db/m3db-config.yaml
+cp m3db-config.yaml /etc/m3db/m3db-config.yaml
 
 # Tune kernel
 sudo sysctl -w fs.file-max=3000000

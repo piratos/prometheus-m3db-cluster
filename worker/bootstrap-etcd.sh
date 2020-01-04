@@ -31,7 +31,7 @@ ExecStart=/usr/local/bin/etcd \\
  --listen-client-urls http://${ETCD_HOST_IP}:2379,http://127.0.0.1:2379 \\
  --advertise-client-urls http://${ETCD_HOST_IP}:2379 \\
  --initial-cluster-token etcd-cluster-1 \\
- --initial-cluster tcmalloc-storage-1=http://10.200.5.117:2380,tcmalloc-storage-2=http://10.200.5.104:2380,tcmalloc-storage-3=http://10.200.3.237:2380 \\
+ --initial-cluster worker1=http://10.10.5.11:2380,worker2=http://10.10.5.12:2380,worker3=http://10.10.5.13:2380 \\
  --initial-cluster-state new \\
  --heartbeat-interval 1000 \\
  --election-timeout 5000

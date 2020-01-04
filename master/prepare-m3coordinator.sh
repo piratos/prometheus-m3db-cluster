@@ -9,7 +9,7 @@ sudo mkdir /etc/m3coord /var/lib/m3coord /var/lib/m3kv
 sudo groupadd -f -g 1502 m3coord
 sudo useradd -c "m3db user" -d /var/lib/m3coord -s /bin/false -g m3coord -u 1503 m3coord
 sudo chown -R m3coord:m3coord /var/lib/m3coord /var/lib/m3kv
-cp /root/master/m3coordinator-config.yaml /etc/m3coord/m3coordinator-config.yaml
+cp m3coordinator-config.yaml /etc/m3coord/m3coordinator-config.yaml
 
 # Tune kernel
 sudo sysctl -w fs.file-max=3000000

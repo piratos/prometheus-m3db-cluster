@@ -34,8 +34,8 @@ clusters:
           etcdClusters:
             - zone: embedded
               endpoints:
-                - 10.200.3.237:2379
-                - 10.200.5.117:2379
-                - 10.200.5.104:2379
+                - 10.10.5.11:2379
+                - 10.10.5.12:2379
+                - 10.10.5.13:2379
       writeConsistencyLevel: majority
       readConsistencyLevel: unstrict_majority

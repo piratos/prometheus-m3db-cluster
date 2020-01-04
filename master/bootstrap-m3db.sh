@@ -6,27 +6,27 @@ curl -X POST http://localhost:7201/api/v1/database/create -d '{
   "replicationFactor": "3",
   "hosts": [
         {
-            "id": "tcmalloc-storage-1",
+            "id": "worker1",
             "isolationGroup": "group1",
             "zone": "embedded",
             "weight": 100,
-            "address": "10.200.5.117",
+            "address": "10.10.5.10",
             "port": 9000
         },
         {
-            "id": "tcmalloc-storage-2",
+            "id": "worker2",
             "isolationGroup": "group2",
             "zone": "embedded",
             "weight": 100,
-            "address": "10.200.5.104",
+            "address": "10.10.5.11",
             "port": 9000
         },
         {
-            "id": "tcmalloc-storage-3",
+            "id": "worker3",
             "isolationGroup": "group3",
             "zone": "embedded",
             "weight": 100,
-            "address": "10.200.5.237",
+            "address": "10.10.5.13",
             "port": 9000
         }
     ]
